@@ -1,6 +1,6 @@
 {
   "name": "band-adretiro",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Render adretiro band dashboard",
   "main": "src/index.js",
   "scripts": {
