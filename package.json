@@ -1,6 +1,6 @@
 {
   "name": "band-adretiro",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Render adretiro band dashboard",
   "main": "src/index.js",
   "scripts": {
@@ -15,6 +15,7 @@
   "dependencies": {
     "@types/node": "^20.4.2",
     "axios": "^1.4.0",
-    "dotenv": "^16.3.1"
+    "dotenv": "^16.3.1",
+    "exceljs": "^4.3.0"
   }
 }
