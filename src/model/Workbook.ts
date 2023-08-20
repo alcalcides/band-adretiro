@@ -1,4 +1,5 @@
 import ExcelJS, { Worksheet } from "exceljs";
+import { log } from "console";
 
 export class Workbook {
     private workbook: ExcelJS.Workbook;
@@ -24,18 +25,18 @@ export class Workbook {
         return data.value
     }
     
-    public async printSheets(database: any) {
-        await this.workbook.xlsx.load(database);
+    public async debugWorkbook(dataBase: any) {
+        await this.workbook.xlsx.load(dataBase);
     
         this.workbook.eachSheet((worksheet) => {
-            console.log(`Sheet: ${worksheet.name}`);
+            log(`Sheet: ${worksheet.name}`);
         
             worksheet.eachRow((row, rowIndex) => {
             const rowData = row.values;
-            console.log(`Row ${rowIndex}:`, rowData);
+            log(`Row ${rowIndex}:`, rowData);
             });
         
-            console.log("---");
+            log("---");
         });
     }
 }
